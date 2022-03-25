@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initil-scale=1">
+	<title>Page d'accueil</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript">
+		function ajouter(){
+              var code = parseInt(document.getElementById("id").value);
+              var monPanier = new Panier();
+              monPanier.ajouterArticle(code)
+
+		}
+	</script>
+
+</head>
+<body>
+	<div class="firstDiv">
+		<p class="firstDiv_p">Pour une lutte raisonnée contre les nuisibles et parasites</p>
+	</div>
+	<div class="secondDiv">
+		<img src="aurouze.jpg" class="aurouze">
+
+		<input type="text" name="" class="search" placeholder="Recherchez dans la boutique">
+
+		<p class="tel">
+			<svg width="24" height="20" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M1.23583 1.77011L1.17686 1.21709H1.73301H4.80994H4.85096H5.13155L5.27773 1.45658L6.39568 3.28803L6.67686 3.74866L6.19614 3.99392L5.17209 4.51638L5.1705 4.51719L4.41168 4.90775L4.85795 5.59751C6.0672 7.3908 7.68323 8.88643 9.58045 9.96688L10.2425 10.3433L10.6007 9.71188L10.6005 9.71179L10.6074 9.70043L11.4689 8.2715L11.6768 7.92669L12.058 8.05627L14.6632 8.9418L15.0022 9.05707V9.4152V12.2429V12.7429H14.5022H13.7136C10.61 12.7564 7.61076 11.6366 5.29978 9.59905L5.29951 9.59881C3.00616 7.57382 1.55734 4.78494 1.23583 1.77011ZM6.60114 3.16922L6.60099 3.16931L6.59431 3.15795L5.52008 1.33108C5.45128 1.22033 5.35426 1.12744 5.23725 1.06199C5.11942 0.996088 4.98571 0.960502 4.84891 0.959229H1.75445C1.64313 0.959699 1.53338 0.982907 1.43228 1.0271C1.33097 1.07138 1.2409 1.13559 1.16749 1.21511C1.0941 1.2946 1.03894 1.38765 1.00499 1.48807C0.971306 1.58769 0.959073 1.6928 0.968877 1.79691C1.30532 4.88172 2.79273 7.73759 5.14783 9.81415C7.50396 11.8916 10.5618 13.0418 13.7329 13.041H13.733H14.5022C14.7127 13.041 14.9127 12.9589 15.0586 12.8157L15.4074 13.1712L15.0586 12.8157C15.2043 12.6728 15.2843 12.481 15.2843 12.2831V9.4152H15.2842L15.2843 9.408C15.2865 9.25645 15.2417 9.10701 15.1547 8.97947L15.5677 8.69764L15.1547 8.97947C15.0695 8.85463 14.9474 8.75612 14.803 8.69782L12.1595 7.81659L12.1595 7.81662L12.1535 7.81454C12.0765 7.78779 11.9955 7.77337 11.9135 7.77192C11.7893 7.78225 11.6697 7.8212 11.5646 7.88513C11.4553 7.95166 11.3653 8.04297 11.3018 8.15024L11.2977 8.15722L11.2934 8.16407L10.3908 9.58294L10.1358 9.98372L9.72252 9.74965C7.85984 8.69479 6.27131 7.2295 5.08269 5.46852L4.76657 5.00019L5.26989 4.7434L6.29552 4.22013L6.29735 4.21921C6.39222 4.1713 6.47529 4.10505 6.54173 4.02513C6.60816 3.94523 6.6566 3.85331 6.68457 3.75531C6.71254 3.65732 6.71956 3.55493 6.7053 3.45436C6.69105 3.35379 6.65574 3.25671 6.60114 3.16922Z" stroke="#669128"/>
+			</svg>
+			01 40 41 16 20
+		</p>
+		<p class="cart">
+			<a href="#">
+				<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M19.9171 13.6509H6.64209L6.28209 11.7759H19.9771C20.4088 11.7771 20.8275 11.6281 21.1614 11.3544C21.4952 11.0807 21.7235 10.6994 21.8071 10.2759L23.0671 4.27588C23.1251 4.00299 23.1215 3.72059 23.0566 3.44926C22.9916 3.17794 22.8669 2.92453 22.6916 2.70752C22.5162 2.4905 22.2947 2.31535 22.043 2.19484C21.7914 2.07432 21.5161 2.01147 21.2371 2.01088H4.39209L4.06209 0.150879H0.64209V2.02588H2.51709L4.76709 13.7859C4.11361 13.9403 3.53082 14.3095 3.11201 14.8344C2.69321 15.3592 2.4626 16.0094 2.45709 16.6809C2.49222 17.5072 2.85245 18.2862 3.45932 18.8481C4.06618 19.41 4.87051 19.7093 5.69709 19.6809C6.51708 19.7012 7.31208 19.3978 7.91003 18.8363C8.50799 18.2749 8.86079 17.5005 8.89209 16.6809C8.88932 16.2838 8.80774 15.8912 8.65209 15.5259H16.8871C16.7314 15.8912 16.6499 16.2838 16.6471 16.6809C16.6822 17.5072 17.0424 18.2862 17.6493 18.8481C18.2562 19.41 19.0605 19.7093 19.8871 19.6809C20.6827 19.6809 21.4458 19.3648 22.0084 18.8022C22.571 18.2396 22.8871 17.4765 22.8871 16.6809C22.8871 15.8852 22.571 15.1222 22.0084 14.5596C21.4458 13.9969 20.6827 13.6809 19.8871 13.6809L19.9171 13.6509ZM21.2371 3.93088L19.9771 9.93088H5.89209L4.78209 3.93088H21.2371ZM5.69709 17.8359C5.37361 17.8449 5.05879 17.7306 4.81646 17.5161C4.57413 17.3017 4.42242 17.0031 4.39209 16.6809C4.42263 16.3478 4.58285 16.04 4.83819 15.824C5.09353 15.6079 5.42354 15.5009 5.75709 15.5259C6.08905 15.501 6.41736 15.6085 6.6703 15.8249C6.92325 16.0414 7.08028 16.3491 7.10709 16.6809C7.09416 16.8508 7.04692 17.0163 6.96821 17.1674C6.8895 17.3185 6.78097 17.452 6.64917 17.56C6.51737 17.668 6.36504 17.7481 6.2014 17.7955C6.03775 17.8429 5.86619 17.8567 5.69709 17.8359ZM19.9171 17.8359C19.5835 17.8609 19.2535 17.7538 18.9982 17.5378C18.7428 17.3217 18.5826 17.014 18.5521 16.6809C18.6102 16.3632 18.7778 16.0759 19.0259 15.8691C19.2739 15.6623 19.5866 15.5491 19.9096 15.5491C20.2325 15.5491 20.5453 15.6623 20.7933 15.8691C21.0414 16.0759 21.209 16.3632 21.2671 16.6809C21.2365 17.0112 21.0784 17.3166 20.8264 17.5322C20.5743 17.7479 20.2481 17.8568 19.9171 17.8359Z" fill="#669128"/>
+				</svg>
+			</a>
+		</p>
+		<p class="user">
+			<a href="#">
+				<svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M5.88741 6.56675C4.23055 6.56675 2.8874 5.13406 2.8874 3.36675C2.8874 1.59944 4.23055 0.166748 5.88741 0.166748C7.54426 0.166748 8.88741 1.59944 8.88741 3.36675C8.88741 5.13406 7.54426 6.56675 5.88741 6.56675ZM5.88741 5.31675C4.99568 5.31675 4.13741 4.52092 4.13741 3.36675C4.13741 2.21257 4.99568 1.41675 5.88741 1.41675C6.77914 1.41675 7.63741 2.21257 7.63741 3.36675C7.63741 4.52092 6.77914 5.31675 5.88741 5.31675Z" fill="white"/>
+				<path d="M10.0624 12.4415C10.0624 10.6196 8.28551 8.97925 5.87491 8.97925C3.4643 8.97925 1.6874 10.6196 1.6874 12.4415L1.6874 15.6667L0.462403 15.6667L0.462402 12.4415C0.462402 9.76254 2.98358 7.75425 5.87491 7.75425C8.76624 7.75425 11.2874 9.76254 11.2874 12.4415L11.2874 15.6667H10.0624V12.4415Z" fill="white"/>
+				</svg>
+				Sign in
+			</a>
+		</p>
+	</div>
+	<div class="thirdDiv">
+		<ul><li class="icon_bas"><a href="#">services</a></li></ul>
+		<ul><li class="icon_bas"><a href="#">nos produits</a></li></ul>
+		<ul><li><a href="#">produits pro</a></li></ul>
+		<ul><li><a href="#">marques</a></li></ul>
+		<ul><li><a href="#">faq</a></li></ul>
+		<ul><li><a href="#">qui sommes nous ?</a></li></ul>
+	</div>
+	<div class="fourDiv">
+		<img src="rat.jpg" class="fourDiv_rat">
+		<p>maison aurouze</p>
+	</div>
+	<div class="fiveDiv">
+		<img src="salle.jpg" class="fiveDiv_salle">
+		<p>"spécialiste de la dératisation et de la lutte antinuisible à paris depuis 1872"</p>
+	</div>
+
+	<div class="header" id="firstHeader">
+		<p class="para"><strong></strong> Une gamme de produits effcicaces pour votre bien-être</p>
+		<p class="status">Découvrez nos produits</p>
+	</div>
+	<div class="produit">
+			<div class="b">
+				<img src="rat.png">
+				<p class="plus">DÉRATISATION</p>
+				<p>
+					Débarrassez-vous une bonne fois pour toute des souris, mulots, rats, loirs, fouines, taupes, ragondins, campagnols...
+				</p>
+				<p><a href="#">En savoir plus</a></p>
+			</div>  
+			<div class="b">
+				<img src="cafard.png">
+				<p class="plus">DÉSINSECTISATION</p>
+				<p>
+					Assurer une protection durable contre les blattes, cafards, guêpes, frelons, puces, araignées, scorpions...
+				</p>
+				<p><a href="#">En savoir plus</a></p>
+			</div>
+			<div class="b">
+				<img src="oiseau.png">
+				<p class="plus">DÉPIGEONNISATION</p>
+				<p>
+					Débarrassez-vous des pigeons, autres volatiles...
+				</p>
+				<p><a href="#">En savoir plus</a></p>
+			</div>
+			<div class="b">
+				<img src="chenille.png">
+				<p class="plus">DÉSINFECTION</p>
+				<p>
+					Avec nos produits, dites au revoir odeurs acariens, virus, rubérole, champignons, mycos, protozoaires..
+				</p>
+				<p><a href="#">En savoir plus</a></p>
+			</div>
+	</div>
+	<div class="header" id="secondHeader">
+		<p class="para"><strong></strong> Des partenaires  marques reconnues et appréciées</p>
+		<p class="status">Consultez vos marques préférées</p>
+	</div>
+		<div class="marques">
+			<img src="bell.jpg" class="photo">
+			<img src="vulcano.jpg" class="photo">
+			<img src="wisecon.jpg" class="photo">
+			<img src="aeroxon.jpg" class="photo">
+			<img src="lucifer.jpg" class="photo">
+			<img src="polti.jpg" class="photo">
+			<img src="noxima.jpg" class="photo">
+			<img src="digrain.jpg" class="photo">
+			<img src="degy.jpg" class="photo">
+			<img src="biozide.jpg" class="photo">
+			<img src="brc.jpg" class="photo">
+			<img src="basf.jpg" class="photo">
+		</div>
+	<div class="header" id="thirdHeader">
+		<p class="para"><strong></strong> Quelques produits pour une lutte efficace</p>
+		<p class="status">Vous ne pouvez pas vous rendre en magasin ? Achetez directement en ligne </p>
+	</div>
+		<div class="achat">
+			<div>
+				<img src="1.jpg">
+				<p>Tapette à Rat Bois</p>
+				<p id="id">2,50 €</p>
+				<button  type="submit" onclick="ajouter()">Ajouter au panier</button>
+			</div>
+			<div>
+				<img src="2.jpg">
+				<p>Répulsif Anti Fouine et Martre</p>
+				<p id="id">13,00 €</p>
+				<button  type="submit" onclick="ajouter()">Ajouter au panier</button>
+			</div>
+			<div>
+				<img src="3.jpg">
+				<p>Piège à glu Rat et Souris</p>
+				<p id="id">9,50 €</p>
+				<button  type="submit" onclick="ajouter()">Ajouter au panier</button>
+			</div>
+			<div>
+				<img src="4.jpg">
+				<p>Répulsif Anti Taupe Solaire</p>
+				<p id="id">26,00 €</p>
+				<button  type="submit" onclick="ajouter()">Ajouter au panier</button>
+			</div>
+			<div>
+				<img src="5.jpg">
+				<p>Tapette à Rat fer</p>
+				<p id="id">3,50 €</p>
+				<button  type="submit" onclick="ajouter()">Ajouter au panier</button>
+			</div>
+			<div>
+				<img src="6.jpg">
+				<p>Tapette à Rat fer</p>
+				<p id="id">19,50 €</p>
+				<button  type="submit" onclick="ajouter()">Ajouter au panier</button>
+			</div>
+			<div>
+				<img src="7.jpg">
+				<p>Ultrasons Pile et Secteur</p>
+				<p id="id">27,00 €</p>
+				<button  type="submit" onclick="ajouter()">Ajouter au panier</button>
+			</div>
+			<div>
+				<img src="8.jpg">
+				<p>Piège à Ragondin</p>
+				<p id="id">110,00 €</p>
+				<button  type="submit" onclick="ajouter()">Ajouter au panier</button>
+			</div>
+		</div>
+	<div class="footer_menu">
+			<div class="foots">
+				<img src="aurouze.jpg">
+				<p>Conseils, prestations et vente en ligne de solutions insecticides, raticides, souricides et produits pour la lutte contre les nuisibles, rongeurs et parasites. </p>
+			</div>
+			<div class="_foots">
+				<div class="loto">
+					<ul>
+						<li><a href="#">A propos de Aurouze</a></li>
+						<li><a href="#">Horaires d'ouverture</a></li>
+						<li><a href="#">Délais et garanties</a></li>
+					</ul>
+				</div>
+				<div class="loto">
+					<ul>
+						<li><a href="#">Mon compte</a></li>
+						<li><a href="#">Votre panier</a></li>
+						<li><a href="#">Conditions générales de vente</a></li>
+					</ul>
+				</div>
+				<div class="loto">
+					<ul>
+						<li><a href="#">Vie privée</a></li>
+						<li><a href="#">Plan du site</a></li>
+						<li><a href="#">Contactez-nous</a></li>
+					</ul>
+				</div>
+			</div>
+		<div class="social">
+			Social media
+			<div>
+						<a href="https://www.instagram.com/aurouze" target="_blank">
+							<svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M15.8393 7.99833C11.5827 7.99833 8.14938 11.3575 8.14938 15.522C8.14938 19.6866 11.5827 23.0457 15.8393 23.0457C20.0958 23.0457 23.5292 19.6866 23.5292 15.522C23.5292 11.3575 20.0958 7.99833 15.8393 7.99833ZM15.8393 20.4134C13.0886 20.4134 10.8398 18.2198 10.8398 15.522C10.8398 12.8242 13.0819 10.6306 15.8393 10.6306C18.5967 10.6306 20.8387 12.8242 20.8387 15.522C20.8387 18.2198 18.59 20.4134 15.8393 20.4134ZM25.6374 7.69057C25.6374 8.66622 24.8343 9.44544 23.8437 9.44544C22.8465 9.44544 22.0501 8.65968 22.0501 7.69057C22.0501 6.72146 22.8532 5.9357 23.8437 5.9357C24.8343 5.9357 25.6374 6.72146 25.6374 7.69057ZM30.7305 9.47163C30.6168 7.12089 30.068 5.03862 28.3078 3.32303C26.5543 1.60745 24.426 1.07051 22.0233 0.952649C19.547 0.815141 12.1248 0.815141 9.64854 0.952649C7.25256 1.06397 5.12428 1.6009 3.3641 3.31649C1.60392 5.03207 1.06182 7.11434 0.941347 9.46508C0.800801 11.8879 0.800801 19.1496 0.941347 21.5724C1.05512 23.9231 1.60392 26.0054 3.3641 27.721C5.12428 29.4366 7.24587 29.9735 9.64854 30.0914C12.1248 30.2289 19.547 30.2289 22.0233 30.0914C24.426 29.98 26.5543 29.4431 28.3078 27.721C30.0613 26.0054 30.6101 23.9231 30.7305 21.5724C30.8711 19.1496 30.8711 11.8944 30.7305 9.47163ZM27.5314 24.1719C27.0094 25.4554 25.9988 26.4441 24.6803 26.9614C22.706 27.7275 18.0211 27.5507 15.8393 27.5507C13.6575 27.5507 8.96589 27.721 6.99824 26.9614C5.68647 26.4507 4.67587 25.4619 4.14715 24.1719C3.3641 22.2403 3.54481 17.6567 3.54481 15.522C3.54481 13.3874 3.3708 8.79718 4.14715 6.87206C4.66918 5.58865 5.67977 4.5999 6.99824 4.08261C8.97258 3.31649 13.6575 3.49328 15.8393 3.49328C18.0211 3.49328 22.7127 3.32303 24.6803 4.08261C25.9921 4.59335 27.0027 5.5821 27.5314 6.87206C28.3145 8.80373 28.1338 13.3874 28.1338 15.522C28.1338 17.6567 28.3145 22.2468 27.5314 24.1719Z" fill="white"/>
+							</svg>
+						</a>
+						<a href="https://www.youtube.com/aurouze" target="_blank">
+							<svg width="37" height="27" viewBox="0 0 37 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M36.0837 4.8572C35.6697 3.26251 34.4498 2.00658 32.9009 1.58036C30.0935 0.805878 18.8359 0.805878 18.8359 0.805878C18.8359 0.805878 7.57848 0.805878 4.77097 1.58036C3.2221 2.00665 2.00222 3.26251 1.58819 4.8572C0.835938 7.74766 0.835938 13.7784 0.835938 13.7784C0.835938 13.7784 0.835938 19.809 1.58819 22.6995C2.00222 24.2942 3.2221 25.4978 4.77097 25.924C7.57848 26.6985 18.8359 26.6985 18.8359 26.6985C18.8359 26.6985 30.0934 26.6985 32.9009 25.924C34.4498 25.4978 35.6697 24.2942 36.0837 22.6995C36.8359 19.809 36.8359 13.7784 36.8359 13.7784C36.8359 13.7784 36.8359 7.74766 36.0837 4.8572ZM15.1541 19.2538V8.30294L24.5631 13.7785L15.1541 19.2538Z" fill="white"/>
+							</svg>
+						</a>
+						<a href="https://www.facebook.com/aurouze" target="_blank">
+							<svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M27.6217 0.849518H4.05022C3.19774 0.849518 2.38018 1.18077 1.77738 1.7704C1.17458 2.36004 0.835938 3.15975 0.835938 3.99362L0.835938 27.0504C0.835938 27.8843 1.17458 28.684 1.77738 29.2736C2.38018 29.8632 3.19774 30.1945 4.05022 30.1945H13.2411V20.2179H9.02232V15.522H13.2411V11.943C13.2411 7.87201 15.7188 5.62332 19.5136 5.62332C21.331 5.62332 23.2315 5.94035 23.2315 5.94035V9.93598H21.1375C19.0743 9.93598 18.4308 11.1884 18.4308 12.4729V15.522H23.0366L22.3 20.2179H18.4308V30.1945H27.6217C28.4741 30.1945 29.2917 29.8632 29.8945 29.2736C30.4973 28.684 30.8359 27.8843 30.8359 27.0504V3.99362C30.8359 3.15975 30.4973 2.36004 29.8945 1.7704C29.2917 1.18077 28.4741 0.849518 27.6217 0.849518Z" fill="white"/>
+							</svg>
+						</a>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="footer">
+		<p>AUROUZE - 8 rue des halles, 75001 Paris . Tous droits réservés</p>
+	</div>
+
+</body>
+</html>
+
+
+
