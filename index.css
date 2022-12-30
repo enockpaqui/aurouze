@@ -1,441 +1,144 @@
-.firstDiv{
-	position: absolute;
-	width: 100%;
-	height: 63px;
-	left: -1px;
-	top: 0px;
-	background: #275101;
-}
-.firstDiv_p{
-	position: absolute;
-	width: 574px;
-	height: 36px;
-	left: 500px;
-	top: 8px;
+*{
+	box-sizing: border-box;
 	font-family: Montserrat;
-	font-weight: 600;
-	font-size: 16px;
-	color: #FFFFFF;
+}
+body{
+	margin: 0;
+}
+#header{
+	display: flex;
+	background-color: #168016;
+	justify-content: center;
+}
+#header .header_title{
+	text-align: center;
+	font-weight: bold;
 	text-transform: uppercase;
+	color: white;
+	font-size: 30px;
 }
-.secondDiv{
-	position: absolute;
-	width: 100%;
-	height: 88px;
-	top: 63px;
-	border-bottom: 1px solid #C4C4C4;
-	box-sizing: border-box;
+#infos,#container,#materiel,#sous_achat,.img_container,#footer_menu_list{
+	display: flex;
+	align-items: center;
 }
-.aurouze{
-	position: absolute;
-	width: 160px;
-	margin: 20px 131px;
-	
+#infos #search{
+	width: 40%;
 }
-.search{
-	position: absolute;
-	width: 400px;
-	height: 25px;
-	left: 400px;
-	top: 30px;
-
-	/* grey */
-	background: #F5F5F5;
-
-	/* grey dark1 */
-	border: 1px solid #E3E3E3;
-	box-sizing: border-box;
-	border-radius: 21.5px;
-
-	/* Auto Layout */
-	padding: 9px 16px;	
+#search .search_item{
+	width: 80%;
 }
-.tel{
-	position: absolute;
-	width: 110px;
-	height: 19px;
-	left:1084.37px;
-	top: 15.38px;
-	font-family: Roboto;
-	font-size: 12px;
-	text-align: right;
-	color: #000000;
+#search .search_action{
+	width: 20%;
 }
-.cart{
-	position: absolute;
-	left:1222.64px;
-	right: 3.2%;
-	top: 9.31%;
-	bottom: 9.31%;
+#infos #tel,#infos #logo{
+	width: 20%;
 }
-.user{
-	background: #669128;
-	border-radius: 25px;
-	position: absolute;
-	width: 70px;
-	height: 25px;
-	right: 0px;
-	top: 20px;
-	padding: 2px 2px;
-	margin: 0px 40px;
-	color: #FFFFFF;
+#infos #user,#infos #cart{
+	width: 10%;
 }
-.user a{
-	color: #FFFFFF;
-	text-decoration: none;
+#search > .search{
+	width: 90%;
 }
-.thirdDiv{
-	position: absolute;
-	width: 100%;
-	top: 151px;
-	background: #FFFFFF;
+#portail{
+	background-image: url(rat.jpg);
+	height: 600px;
+	background-position: center;
+	background-size: cover;
 }
-.thirdDiv ul{
+#container >li{
+	width: 17%;
 	list-style-type: none;
-
 }
-.thirdDiv ul li{
-	margin-right: 100px;
-	float: left;
-}
-.thirdDiv ul li a{
-	position: static;
-	width: 80px;
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 16px;
+#container > li >a{
 	text-decoration: none;
+	font-weight: bold;
 	text-transform: uppercase;
-	color: #2E5127;
-	margin: 0px 8px;
+	color: #168016;
 }
-.fourDiv{
-	position: absolute;
-	width: 100%;
-	height: 624px;
-	left: 0px;
-	top: 219px;
+#user a,#footer_menu_list ul li a{
+	text-decoration: none;
 }
-.fourDiv_rat{
-	width: 100%;
-	height: 624px;
+#user a svg{
+	color: #168016;
 }
-.fourDiv p{
-	position: absolute;
-	width: 497px;
-	height: 61px;
-	left: 26px;
-	top: 400px;
+#portail .title{
 	text-transform: uppercase;
-
-	font-family: Montserrat;
-
-	font-weight: 500;
-	font-size: 50px;
-	/* identical to box height */
-	color: #F8FFEE;
-}
-.fiveDiv{
-	top :843px;
+	font-weight: bold;
+	font-size: 60px;
 	position: absolute;
-	width: 100%;
-	height: 104px;
-	left: 0px;
-	background: #275101;
+	top: 500px;
+	right: 200px;
 }
-.fiveDiv_salle{
+#portail .salle{
 	position: absolute;
-	width: 245px;
-	height: 163px;
-	left: 20px;
-	top: -30px;
+	top: 735px;
 }
-.fiveDiv p{
+#portail .action{
 	position: absolute;
-	width: 1160px;
-	height: 29px;
-	color: #FFFFFF;
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 24px;
-	text-transform: uppercase;
-	left: 400px;
-}
-.header{
-	position: absolute;
-	width: 413px;
-	height: 21px;
-	left: 0px;
-	color: #1F5A1E;
+	top: 770px;
+	right: 200px;
 	
 }
-#firstHeader{
-	top: 1018px;
-
+#portail .action, #prod, #part, #achat{
+	font-weight: bold;
 }
-#secondHeader{
-	top: 1696px;
-
+#prod p, #part p, #achat p{
+	color: #168016;
+	text-align: center;
 }
-#thirdHeader{
-	top: 2482px;
+#materiel div{
+	width: 15%;
+	text-align: center;
+}
+#materiel div p{
+	color: #168016;
+	font-size: 15px;
+}
+#sous_achat{
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+}
+#sous_achat div img{
+	width: 350px;
+}
+#sous_achat div{
+	margin: 5px;
+}
+.img_container,#materiel{
+	justify-content: space-around;
+}
+#footer_menu_list{
+	justify-content: flex-end;
+}
+#footer_menu_list  div ul li{
+	list-style-type: none;
+	padding: 2px;
+	font-size: 15px;
+	color: white;
+}
+#footer p{
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+}
+#footer_menu{
+	background-color: #2d862d;
+	margin-top: 10px;
+}
+.apparence,#portail .title,#portail .action{
+	color: white;
+}
+#footer_menu  div img{
+	margin: 5px;
+}
+#footer_menu  div #active{
+	position: relative;
+	bottom: 22px;
 }
 strong{
-	position: absolute;
-	width: 3.40px;
-	height: 18.12px;
-	left: 60px;
-	background: #FF4A4A;
-	border-radius: 4px;
+	color: red;
 }
-.produit{
-	position: absolute;
-	height: 432px;
-    left: 180px;
-	top: 1141px;
+#prod, #part, #achat{
+	padding-top: 50px;
 }
-.produit div{
-	float: left;
-    padding: 10px;
-	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
-    text-align: center;
-	margin: 20px;
-	width: 272px;
-	height: 432px;
-    
-}
-.plus{
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 16px;
-	text-align: center;
-	color: #212129;
-}
-.b p{
-	font-family: 'Montserrat Light';
-	font-size: 14px;
-	text-align: center;
-}
-.b p a{
-	font-family: 'Montserrat Light';
-	font-size: 16px;
-	font-weight: bold;
-	text-align: center;
-	color: #275101;
-}
-.para{
-	position: absolute;
-	width: 459.53px;
-	height: 18.12px;
-	font-family: 'Montserrat Light';
-	font-size: 12px;
-	left: 505.47px;
-	color: #1F5A1E;
-	text-align: center;
-	
-}
-.status{
-	position: absolute;
-	width: 976px;
-
-	left: 248px;
-	font-family: Montserrat;
-	font-size: 44px;
-	
-	/* identical to box height */
-	text-align: center;
-	color: #1F5A1E;
-}
-
-.marques{
-	position: absolute;
-	width: 1132px;
-	height: 512px;
-	left: 169px;
-	top: 1843px;
-	background: #FFFFFA;
-/* Shadows/02. Regular */
-
-	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
-	border-radius: 4px;
-
-}
-.achat{
-	position: absolute;
-	top: 2703px;
-	
-	left: 180px;
-
-}
-.achat div{
-	float: left;
-	padding: 10px;
-	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
-    text-align: center;
-	margin: 15px;
-	width: 278px;
-}
-.achat img{
-	display:inline-block;
-    text-align:center;
-    left: 180px;
-    width: 244.45px;
-	height: 236.31px;
-	border: 1px solid #000000;
-	box-sizing: border-box;
-	margin: 10px;
-	
-}
-.achat div p{
-	color: #275101;
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 16px;
-	
-}
-.achat div button{
-	background: #669128;
-	border-radius: 31px;
-	color: #FFFFFF;
-	width: 142px;
-	height: 24px;
-	padding :8px, 16px, 8px, 16px;
-}
-.footer_menu{
-	position: absolute;
-	top: 3728px;
-	height: 266px;
-	left: 0px;
-	width: 100%;
-	background: #275101;
-	border: 1px solid rgba(255, 255, 255, 0.3);
-
-}
-.footer{
-	position: absolute;
-	width: 100%;
-	height: 104px;
-	top :3996px;
-	left: 0px;
-	background: linear-gradient(0deg, #275101, #275101), #7D5C65;
-
-}
-
-
-.marques img{
-	display:inline-block;
-    padding:45px;
-    margin:  0 55px;
-    left: 180px;
-}
-.footer p{
-	position: absolute;
-	width: 1170.81px;
-	height: 20.54px;
-	left: calc(50% - 1170.81px/2 - 0.5px);
-	margin-top: 25px;
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	
-	/* identical to box height, or 131% */
-
-	text-align: center;
-
-	/* white */
-
-	color: #FFFFFF;
-}
-.footer_menu div p{
-	position: static;
-	left: 0%;
-	right: 0%;
-	top: 38.09%;
-	bottom: 0%;
-	font-family: 'Montserrat Light';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 12.8px;
-	
-	/* or 150% */
-
-	/* Global/8. White */
-
-	color: #FFFFFA;
-
-	/* Inside Auto Layout */
-
-	flex: none;
-	order: 1;
-	flex-grow: 0;
-	margin: 16px 0px;
-	width: 270px;
-	height: 117px;
-}
-.foots{
-	position: absolute;
-	width: 1132px;
-	height: 512px;
-	left: 169px;
-	margin-top: 40px;
-	
-}
-.loto ul{
-	list-style-type: none;
-	display:inline-block;
-    
-
-}
-.loto ul li{
-	margin-bottom: 10px
-
-}
-.loto ul li a {
-	text-decoration: none;
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 12px;
-	
-	/* or 175% */
-
-	color: #FFE2D2;
-
-}
-.loto{
-	left: 500px;
-}
-._foots{
-	position: absolute;
-	width: 1132px;
-	height: 512px;
-	left: 500px;
-	margin-top: 40px;
-}
-._foots div{
-	float: left;
-}
-.social{
-	position: absolute;
-	left: 70.46%;
-	right: 5.47%;
-	top: 30.59%;
-	bottom: 58.54%;
-
-	/* noto sans 14 b */
-
-	font-family: Noto Sans;
-	font-size: 14px;
-	/* identical to box height, or 150% */
-
-	/* white */
-	color: #FFFFFF;
-}
-
-
-/*Other versions*/
