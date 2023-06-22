@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initil-scale=1">
 	<title>Page d'accueil</title>
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
 	<div id="header">
@@ -13,11 +13,11 @@
 	
 	<div id="infos">
 		<div id="logo">
-			<img src="aurouze.jpg">
+			<img src="img/aurouze.jpg">
 		</div>
 		<div id="search">
 			<input type="text"  class="search_item" placeholder="Recherchez dans la boutique">
-			<input type="submit" class="saerch_action" value="Rechercher">
+			<input type="submit" class="search_action" value="Rechercher">
 		</div>
 		<div id="tel">
 			<svg width="24" height="20" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,17 +54,17 @@
 	</div>
 	<div id="portail">
 		<p class="title">maison aurouze</p>
-		<img src="salle.jpg" class="salle">
+		<img src="img/salle.jpg" class="salle">
 		<p class="action">"spécialiste de la dératisation et de la lutte antinuisible à paris depuis 1872"</p>
 	</div>
 
-	<div id="prod">
+	<div class="prod">
 		<p ><strong>|</strong> Une gamme de produits effcicaces pour votre bien-être</p>
 		<p >Découvrez nos produits</p>
 	</div>
 	<div id="materiel">
 			<div>
-				<img src="rat.png">
+				<img src="img/rat.png">
 				<p>DÉRATISATION</p>
 				<p>
 					Débarrassez-vous une bonne fois pour toute des souris, mulots, rats, loirs, fouines, taupes, ragondins, campagnols...
@@ -73,7 +73,7 @@
 			</div>  
 
 			<div>
-				<img src="cafard.png">
+				<img src="img/cafard.png">
 				<p>DÉSINSECTISATION</p>
 				<p>
 					Assurer une protection durable contre les blattes, cafards, guêpes, frelons, puces, araignées, scorpions...
@@ -82,7 +82,7 @@
 			</div>
 
 			<div>
-				<img src="oiseau.png">
+				<img src="img/oiseau.png">
 				<p>DÉPIGEONNISATION</p>
 				<p>
 					Débarrassez-vous des pigeons, autres volatiles...
@@ -91,7 +91,7 @@
 			</div>
 
 			<div >
-				<img src="chenille.png">
+				<img src="img/chenille.png">
 				<p>DÉSINFECTION</p>
 				<p>
 					Avec nos produits, dites au revoir odeurs acariens, virus, rubérole, champignons, mycos, protozoaires..
@@ -99,79 +99,79 @@
 				<p><a href="#">En savoir plus</a></p>
 			</div>
 	</div>
-	<div id="part">
+	<div class="prod">
 		<p><strong>|</strong> Des partenaires  marques reconnues et appréciées</p>
 		<p >Consultez vos marques préférées</p>
 	</div>
 	<div id="part_img">
 		<div class="img_container">
-			<img src="bell.jpg">
-			<img src="vulcano.jpg">
-			<img src="wisecon.jpg">
-			<img src="aeroxon.jpg">
+			<img src="img/bell.jpg">
+			<img src="img/vulcano.jpg">
+			<img src="img/wisecon.jpg">
+			<img src="img/aeroxon.jpg">
 		</div>
 		<div class="img_container">
-			<img src="lucifer.jpg">
-			<img src="polti.jpg">
-			<img src="noxima.jpg">
-			<img src="digrain.jpg">
+			<img src="img/lucifer.jpg">
+			<img src="img/polti.jpg">
+			<img src="img/noxima.jpg">
+			<img src="img/digrain.jpg">
 		</div>
 		<div class="img_container">
-			<img src="degy.jpg">
-			<img src="biozide.jpg">
-			<img src="brc.jpg">
-			<img src="basf.jpg">
+			<img src="img/degy.jpg">
+			<img src="img/biozide.jpg">
+			<img src="img/brc.jpg">
+			<img src="img/basf.jpg">
 		</div>
 	</div>
-	<div id="achat">
+	<div class="prod">
 		<p ><strong>|</strong> Quelques produits pour une lutte efficace</p>
 		<p>Vous ne pouvez pas vous rendre en magasin ? Achetez directement en ligne </p>
 	</div>
 	<div id="sous_achat">
 		<div>
-			<img src="1.jpg">
+			<img src="img/1.jpg">
 			<p>Tapette à Rat Bois</p>
 			<p id="price1" value=2.50>2.50 €</p>
-			<button  type="submit" onclick="add()">Ajouter au panier</button>
+			<button type="submit" onclick="add()">Ajouter au panier</button>
 		</div>
 		<div>
-			<img src="2.jpg">
+			<img src="img/2.jpg">
 			<p>Répulsif Anti Fouine et Martre</p>
 			<p id="price2">13.00 €</p>
-			<button  type="submit" onclick="add()">Ajouter au panier</button>
+			<button type="submit" onclick="add()">Ajouter au panier</button>
 		</div>
 		<div>
-			<img src="3.jpg">
+			<img src="img/3.jpg">
 			<p>Piège à glu Rat et Souris</p>
 			<p id="price3">9.50 €</p>
 			<button  type="submit" onclick="add()">Ajouter au panier</button>
 		</div>
 		<div>
-			<img src="4.jpg">
+			<img src="img/4.jpg">
 			<p>Répulsif Anti Taupe Solaire</p>
 			<p id="price4">26.00 €</p>
 			<button  type="submit" onclick="add()">Ajouter au panier</button>
 		</div>
 		<div>
-			<img src="5.jpg">
+			<img src="img/5.jpg">
 			<p>Tapette à Rat fer</p>
 			<p id="price5">3.50 €</p>
 			<button  type="submit" onclick="add()">Ajouter au panier</button>
 		</div>
 		<div>
-			<img src="6.jpg">
+			<img src="img/6.jpg">
 			<p>Tapette à Rat fer</p>
 			<p id="price6">19.50 €</p>
 			<button  type="submit" onclick="add()">Ajouter au panier</button>
 		</div>
 		<div>
-			<img src="7.jpg">
+			<img src="img/7.jpg">
 			<p>Ultrasons Pile et Secteur</p>
 			<p id="price7">27.00 €</p>
 			<button  type="submit" onclick="add()">Ajouter au panier</button>
 		</div>
 		<div>
-			<img src="8.jpg">
+			<img src="img/8.jpg">
 			<p>Piège à Ragondin</p>
 			<p id="price8">110.00 €</p>
 			<button  type="submit" onclick="add()">Ajouter au panier</button>
@@ -179,7 +179,7 @@
 	</div>
 	<div id="footer_menu">
 		<div>
-			<img src="aurouze.jpg">
+			<img src="img/aurouze.jpg">
 			<span id="active" class="apparence">Conseils, prestations et vente en ligne de solutions insecticides, raticides, souricides et produits pour la lutte contre les nuisibles, rongeurs et parasites. </span>
 		</div>
 		<div id="footer_menu_list">
