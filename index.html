@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initil-scale=1">
 	<title>Page d'accueil</title>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
 </head>
 <body>
 	<div id="header">
@@ -42,16 +43,27 @@
 			</a>
 		</div>
 	</div>
-	<div id="menu">
+
+	<div id="menu" class="fmenu">
+		<a href="#" id="closeBtn" class="close">&times;</a>
 		<ul id="container">
-			<li><a href="">services</a></li>
-			<li><a href="">nos produits</a></li>
-			<li><a href="">produits pro</a></li>
-			<li><a href="">marques</a></li>
-			<li><a href="">faq</a></li>
-			<li><a href="">qui sommes nous?</a></li>
+			<li><a href="#">services</a></li>
+			<li><a href="#">nos produits</a></li>
+			<li><a href="#">produits pro</a></li>
+			<li><a href="#">marques</a></li>
+			<li><a href="#">faq</a></li>
+			<li><a href="#">qui sommes nous?</a></li>
 		</ul>
 	</div>
+
+	<a href="#" id="openBtn">
+		<span class="burger-icon">
+			<span></span>
+			<span></span>
+			<span></span>
+		</span>
+	</a>
+
 	<div id="portail">
 		<p class="title">maison aurouze</p>
 		<img src="img/salle.jpg" class="salle">
@@ -62,6 +74,7 @@
 		<p ><strong>|</strong> Une gamme de produits effcicaces pour votre bien-être</p>
 		<p >Découvrez nos produits</p>
 	</div>
+
 	<div id="materiel">
 			<div>
 				<img src="img/rat.png">
@@ -99,10 +112,12 @@
 				<p><a href="#">En savoir plus</a></p>
 			</div>
 	</div>
+
 	<div class="prod">
 		<p><strong>|</strong> Des partenaires  marques reconnues et appréciées</p>
 		<p >Consultez vos marques préférées</p>
 	</div>
+
 	<div id="part_img">
 		<div class="img_container">
 			<img src="img/bell.jpg">
@@ -123,10 +138,12 @@
 			<img src="img/basf.jpg">
 		</div>
 	</div>
+
 	<div class="prod">
 		<p ><strong>|</strong> Quelques produits pour une lutte efficace</p>
 		<p>Vous ne pouvez pas vous rendre en magasin ? Achetez directement en ligne </p>
 	</div>
+
 	<div id="sous_achat">
 		<div>
 			<img src="img/1.jpg">
@@ -177,6 +194,7 @@
 			<button  type="submit" onclick="add()">Ajouter au panier</button>
 		</div>
 	</div>
+
 	<div id="footer_menu">
 		<div>
 			<img src="img/aurouze.jpg">
@@ -230,7 +248,7 @@
 	<div id="footer">
 		<p>AUROUZE - 8 rue des halles, 75001 Paris . Tous droits réservés</p>
 	</div>
-	<script src="panier.js"></script>
+	<script src="js/menu.js"></script>
 </body>
 </html>
 

@@ -18,7 +18,7 @@ body{
 }
 #infos,#container,#materiel,#sous_achat,.img_container,#footer_menu_list{
 	display: flex;
-	align-items: center;
+	/* align-items: center; */
 }
 #infos #search{
 	width: 30%;
@@ -34,6 +34,9 @@ body{
 }
 #infos #cart{
 	text-align: center;
+}
+#infos #search,#infos #tel,#infos #cart,#infos #user{
+	margin-top: 15px;
 }
 #search .search_item{
 	width: 70%;
@@ -127,6 +130,9 @@ body{
 	font-size: 15px;
 	color: yellow;
 }
+#footer_menu_list  div ul li a:hover{
+	color: crimson;
+}
 #footer p{
 	text-align: center;
 	font-weight: bold;
@@ -145,6 +151,13 @@ body{
 strong{
 	color: red;
 }
+#closeBtn{
+	visibility: hidden;
+}
+#openBtn{
+	visibility: hidden;
+}
+
 
 /* For tablet */
 /* @media only screen and (max-width : 768px) {
@@ -152,6 +165,54 @@ strong{
 } */
 
 /* For phone */
-/* @media only screen and (max-width : 480px) {
-	
-} */
+@media only screen and (max-width : 480px) {
+	#infos,#materiel,#menu #container{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	#infos #search{
+		width: 100%;
+		text-align: center;
+	}
+	#infos #tel,#infos #cart,#infos #user{
+		width: 33%;
+	}
+	#search .search_action{
+		width: 30%;
+	}
+	#infos #tel span,#infos #user span{
+		font-size: 12px;
+	}
+	#materiel div,#menu #container li{
+		width: 100%;
+	}
+	#portail{
+		height: 200px;
+	}
+	#portail .title{
+		font-size: 20px;
+		position: relative;
+		top: 75%;
+	}
+	#portail .salle{
+		position: relative;
+		top: 65%;
+		width: 25%;
+	}
+	#portail .action{
+		position: absolute;
+		visibility: hidden;
+		font-size: 70%;
+	}
+	#footer_menu  div img{
+		margin: 2px;
+	}
+	#footer_menu  div #active{
+		bottom: 0;
+		font-size: 13px;
+	}
+	#footer_menu_list  div ul li a{
+		font-size: 13px;
+	}
+
+}
